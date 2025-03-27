@@ -17,7 +17,7 @@ services:
     networks:
       - tomcat-net
     volumes:
-      - ./app:/app  # Assuming the project directory is in ./app
+      - ./:/app  # Assuming the project directory is in ./app
     working_dir: /app
 
 networks:
