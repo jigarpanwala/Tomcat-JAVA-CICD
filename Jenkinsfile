@@ -22,7 +22,7 @@ pipeline {
                 script {
                     echo 'Building WAR file with Maven'
                     // Build the Maven project to generate the WAR file
-                    sh 'sudo docker-compose run --rm maven mvn clean package -DskipTests'  // Run Maven inside the maven container
+                    sh 'docker-compose run --rm maven mvn clean package -DskipTests'  // Run Maven inside the maven container
                 }
             }
         }
